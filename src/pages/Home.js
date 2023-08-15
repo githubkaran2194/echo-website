@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import testimonials from '../testimonial';
+import { Link } from 'react-router-dom';
 
 
 
@@ -103,10 +104,10 @@ const Home = () => {
                     <div className="row cards justify-content-center">
 
                         {
-                            data.map((item) => {
+                            data.map((item, index) => {
                                 return (
                                     <>
-                                        <div className="shadow col-md-5 card">
+                                        <div className="shadow col-md-5 card" key={index}>
                                             <span></span>
                                             <i className='fab fa-keybase'></i>
                                             <h1>{item.title}</h1>
@@ -116,6 +117,11 @@ const Home = () => {
                                 )
                             })
                         }
+                    </div>
+                    <div className="text-center">
+                       <Link to="/services">
+                       <button className='btn btn-primary'>More Services</button>
+                       </Link>
                     </div>
                 </div>
             </div>

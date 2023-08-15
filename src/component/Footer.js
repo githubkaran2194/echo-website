@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -20,28 +21,44 @@ const Footer = () => {
                         <div className="col-md-3">
                             <h1>Pages</h1>
                             <li>
-                                <a>Home</a>
+                            <Link to="/">
+                            <a>Home</a>
+                            </Link>
+                               
                             </li>
                             <li>
-                                <a>About</a>
+                            <Link to="/about">
+                            <a>about</a>
+                            </Link>
                             </li>
                             <li>
-                                <a>Services</a>
+                            <Link to="/services">
+                            <a>services</a>
+                            </Link>
+                            </li>
+                            <li>
+                            <Link to="/contact">
+                            <a>contact</a>
+                            </Link>
                             </li>
                         </div>
                         <div className="col-md-3">
                             <h1>Resources</h1>
                             <li>
-                                <a>Home</a>
+                            <Link to="/">
+                            <a>Home</a>
+                            </Link>
+                               
                             </li>
                             <li>
-                                <a>About</a>
+                            <Link to="/about">
+                            <a>about</a>
+                            </Link>
                             </li>
                             <li>
-                                <a>Services</a>
-                            </li>
-                            <li>
-                                <a>Contact</a>
+                            <Link to="/services">
+                            <a>services</a>
+                            </Link>
                             </li>
                         </div>
                         <div className="col-md-3 contact">
