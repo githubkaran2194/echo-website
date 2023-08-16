@@ -65,7 +65,7 @@ const Contact = () => {
             setMsgError(true)
 
         } else {
-            setMsgError(false)
+            setMsgError(false);
         }
 
         axios.post("https://6437a3340c58d3b145754311.mockapi.io/API/CRUD",{
@@ -77,7 +77,7 @@ const Contact = () => {
             console.log(res)
         })
     }
- 
+;
     return (
         <>
             <div className="container contact">
